@@ -1,5 +1,5 @@
 import { buildResponse } from "../utils/generalUtils.mjs";
-import { _checkUserList, _checkFacility } from "../utils/databaseUtils.mjs";
+import { _checkUserList } from "../utils/databaseUtils.mjs";
 import { generateToken } from "../utils/authUtils.mjs";
 import { resetPasswordEmail } from "../utils/emailTemplates/resetPasswordEmail.mjs";
 import { _generateEmailMessage, emailClient } from "../utils/emailUtils.mjs";

@@ -1,6 +1,6 @@
 import bcrypt from "bcryptjs";
 import { buildResponse } from "../utils/generalUtils.mjs";
-import { _checkUserList, _checkFacility } from "../utils/databaseUtils.mjs";
+import { _checkUserList } from "../utils/databaseUtils.mjs";
 import { updateDBRecord } from "../utils/databaseUtils.mjs";
 import { verifyToken } from "../utils/authUtils.mjs";
 
