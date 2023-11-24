@@ -2,32 +2,6 @@ import { settings } from "./config.mjs";
 import { login } from "./services/login.mjs";
 import { confirmEmail } from "./services/confirmEmail.mjs";
 import { buildResponse } from "./utils/generalUtils.mjs";
-import {
-  user_reg_data,
-  confirm_email,
-  enroll_hosp_data,
-  create_donation_case,
-  delete_donation_case,
-  edit_donation_case,
-  login_data,
-  get_all_facilities,
-  get_cases,
-  list_hospital_cases,
-  donate_data,
-  verify_donation,
-  register_hsp_adm,
-  view_user_donations,
-  forgot_password_data,
-  search_donation_cases,
-  reset_password_data,
-  update_user_profile_data,
-  get_user_profile_data,
-  get_single_facility,
-  update_password_data,
-  update_hosp_details,
-  get_hosp_details,
-  facility_donation_history,
-} from "./testData.mjs";
 
 import { forgotPassword } from "./services/forgotPassword.mjs";
 import { resetPassword } from "./services/resetPassword.mjs";
@@ -91,13 +65,3 @@ export const handler = async (event) => {
 
   return response;
 };
-
-// Example usage:
-// login(login_data, settings);
-// register(user_reg_data, settings);
-// confirmEmail(confirm_email, settings);
-// forgotPassword(forgot_password_data, settings);
-// resetPassword(reset_password_data, settings);
-// updateUserProfile(update_user_profile_data, settings);
-// getUserProfile(get_user_profile_data, settings);
-// upadatePassword(update_password_data, settings);

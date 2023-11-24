@@ -1,7 +1,5 @@
-import { validate } from "uuid";
 import { buildResponse } from "../utils/generalUtils.mjs";
 import { _checkUserList, _checkFacility } from "../utils/databaseUtils.mjs";
-import { getTargetDB } from "../utils/getTargetDB.mjs";
 import { generateToken } from "../utils/authUtils.mjs";
 import { resetPasswordEmail } from "../utils/emailTemplates/resetPasswordEmail.mjs";
 import { _generateEmailMessage, emailClient } from "../utils/emailUtils.mjs";

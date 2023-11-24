@@ -2,7 +2,6 @@ import bcrypt from "bcryptjs";
 import { _checkUserList, _checkFacility } from "../utils/databaseUtils.mjs";
 import { buildResponse } from "../utils/generalUtils.mjs";
 import { generateToken } from "../utils/authUtils.mjs";
-import { getTargetDB } from "../utils/getTargetDB.mjs";
 
 export const login = async (event, settings) => {
   try {
