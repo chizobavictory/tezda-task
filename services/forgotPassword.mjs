@@ -7,7 +7,6 @@ import { _generateEmailMessage, emailClient } from "../utils/emailUtils.mjs";
 export const forgotPassword = async (event, settings) => {
   try {
     // Parse the event body if it's a JSON string
-    // let requestBody = event.body;
     let requestBody = event.body;
     if (typeof requestBody === "string") {
       requestBody = JSON.parse(requestBody);
@@ -28,7 +27,7 @@ export const forgotPassword = async (event, settings) => {
 
     if (!userExists.status) {
       return buildResponse(400, {
-        message: "No user exist with this email",
+        message: "No user exists with this email",
       });
     }
 
@@ -51,7 +50,7 @@ export const forgotPassword = async (event, settings) => {
       });
     }
 
-    return buildResponse(200, `A link was sent to ${email} to reset your password`);
+    return buildResponse(200, { message: `A link was sent to ${email} to reset your password` });
   } catch (error) {
     return buildResponse(500, {
       status: false,
