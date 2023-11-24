@@ -9,6 +9,7 @@ phases:
   pre_build:
     commands:
       - echo install pre build commands
+      - npm install
       - echo Installing dependencies. Dependencies bundled with the package
 
   build:
