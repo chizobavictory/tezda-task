@@ -114,3 +114,22 @@ export async function updateDBRecord(
   }
 }
 
+export async function queryDynamoRecord(queryParams) {
+  const command = new QueryCommand(queryParams);
+
+  const dynamoData = await DYNAMODB.send(command);
+  if (dynamoData.Items.length <= 0) {
+    return {
+      status: false,
+      message: "No records found for the query",
+      data: false,
+    };
+  } else {
+    return {
+      status: true,
+      message: "Records found",
+      data: dynamoData.Items,
+    };
+  }
+}
+
