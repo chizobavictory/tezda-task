@@ -99,5 +99,5 @@ export const handler = async (event) => {
 // forgotPassword(forgot_password_data, settings);
 // resetPassword(reset_password_data, settings);
 // updateUserProfile(update_user_profile_data, settings);
-getUserProfile(get_user_profile_data, settings);
+// getUserProfile(get_user_profile_data, settings);
 // upadatePassword(update_password_data, settings);
