@@ -6,6 +6,10 @@ This Serverless Lambda API provides functionality for user authentication, regis
 ### Base URL
 https://mul2xiuj3i.execute-api.us-east-1.amazonaws.com/production
 
+### Postman Collection
+This is the postman collection for the API. It contains all the endpoints and example requests. It also contains the documentation for the endpoints. 
+https://www.postman.com/telecoms-explorer-27073331/workspace/chizobavictory/collection/24035086-9ea1aa49-029c-4e5f-8584-3b20070d62d8?action=share&creator=24035086
+
 ### Architecture
 ![Alt text](Tezda-architecture.drawio.png)
 
