@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Initializing the build
+  pre_build:
+    commands:
+      - echo install pre build commands
+      - echo Installing dependencies. Dependencies bundled with the package
+
+  build:
+    commands:
+      - echo "Zipping deployment package..."
+      - zip -r9 nodejs.zip .
+      - ls -l
+
+  post_build:
+    commands:
+      - echo Entering Post Build Deployment Phase
+      - echo "Updating lambda Function..."
+      - aws lambda update-function-code --function-name biko-core --zip-file fileb://nodejs.zip
+      - echo "Deployment complete. Code deployed to LAMBDA "
+artifacts:
+  files:
+    - "**/*"
