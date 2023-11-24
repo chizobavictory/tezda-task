@@ -21,7 +21,7 @@ phases:
     commands:
       - echo Entering Post Build Deployment Phase
       - echo "Updating lambda Function..."
-      - aws lambda update-function-code --function-name tezda --zip-file fileb://nodejs.zip
+      - aws lambda update-function-code --function-name tezda-auth --zip-file fileb://nodejs.zip
       - echo "Deployment complete. Code deployed to LAMBDA "
 artifacts:
   files:
