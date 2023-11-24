@@ -5,7 +5,6 @@ import { buildResponse } from "./utils/generalUtils.mjs";
 
 import { forgotPassword } from "./services/forgotPassword.mjs";
 import { resetPassword } from "./services/resetPassword.mjs";
-import { updateUserProfile } from "./services/updateUserProfile.mjs";
 import { getUserProfile } from "./services/getUserProfile.mjs";
 import { upadatePassword } from "./services/updatePassword.mjs";
 import { register } from "./services/register.mjs";
@@ -16,7 +15,6 @@ const confirmEmailPath = "/register/confirm-email";
 const loginPath = "/login";
 const forgotPasswordPath = "/forgot-password";
 const resetPasswordPath = "/reset-password";
-const updateUserProfilePath = "/user/update-profile";
 const getUserProfilePath = "/user";
 const updatePasswordPath = "/update-password";
 
@@ -45,10 +43,6 @@ export const handler = async (event) => {
 
     case event.httpMethod === "POST" && event.path === resetPasswordPath:
       response = await resetPassword(event, settings);
-      break;
-
-    case event.httpMethod === "PATCH" && event.path === updateUserProfilePath:
-      response = await updateUserProfile(event, settings);
       break;
 
     case event.httpMethod === "GET" && event.path === getUserProfilePath:
