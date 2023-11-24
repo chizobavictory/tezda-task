@@ -4,7 +4,11 @@
 This Serverless Lambda API provides functionality for user authentication, registration, and password management. The lambda function is exposed via API Gateway. The database is DynamoDB and I setup a CI/CD pipeline using CodePipeline. 
 
 ### Base URL
-https://mul2xiuj3i.execute-api.us-east-1.amazonaws.com/production/
+https://mul2xiuj3i.execute-api.us-east-1.amazonaws.com/production
+
+### Architecture
+![Alt text](Tezda-architecture.drawio.png)
+
 
 ### Endpoints
 #### Health Check
