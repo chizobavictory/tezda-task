@@ -11,7 +11,6 @@ This is the postman collection for the API. It contains all the endpoints and ex
 https://www.postman.com/telecoms-explorer-27073331/workspace/chizobavictory/collection/24035086-9ea1aa49-029c-4e5f-8584-3b20070d62d8?action=share&creator=24035086
 
 ### Architecture
-![Alt text](Tezda-architecture.drawio.png)
 
 
 ### Endpoints
