@@ -1,7 +1,7 @@
 # Tezda Task
 
 ### Lambda
-This Serverless Lambda API provides functionality for user authentication, registration, and password management. The lambda function is exposed via API Gateway. The database is DynamoDB and I setup a CI/CD pipeline using CodePipeline. When users register they get emailed a link to verify their email address using Simple Email Service.
+This Serverless Lambda API provides functionality for user authentication, registration, and password management. The lambda function is exposed via API Gateway. The database is DynamoDB and I setup a CI/CD pipeline using CodePipeline. The AWS Simple Email Service is used to send a link with the token to verify the users email address. The API is deployed in the us-east-1 region.
 
 ### Base URL
 https://mul2xiuj3i.execute-api.us-east-1.amazonaws.com/production
@@ -45,14 +45,14 @@ https://www.postman.com/telecoms-explorer-27073331/workspace/chizobavictory/coll
 - Description: Reset the user's password.
 - Example: POST /reset-password
 
-#### Change Password
-- Path: /change-password
+#### Update Password
+- Path: /update-password
 - Method: POST
-- Description: Change the user's password.
-- Example: POST /change-password
+- Description: Update the user's password.
+- Example: POST /update-password
 
-#### Refresh Token
-- Path: /refresh-token
-- Method: POST
-- Description: Refresh the user's access token.
-- Example: POST /refresh-token
+#### Profile Info
+- Path: /profile-info
+- Method: GET
+- Description: Get the user's profile info.
+- Example: GET /profile-info
