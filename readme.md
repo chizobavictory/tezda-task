@@ -1,7 +1,7 @@
 # Tezda Task
 
 ### Lambda
-This Serverless Lambda API provides functionality for user authentication, registration, and password management. The lambda function is exposed via API Gateway. The database is DynamoDB and I setup a CI/CD pipeline using CodePipeline. The AWS Simple Email Service is used to send a link with the token to verify the users email address. The API is deployed in the us-east-1 region.
+This Serverless Lambda API provides functionality for user authentication, registration, and password management. The lambda function is exposed via API Gateway. The database is DynamoDB and I setup a CI/CD pipeline using CodePipeline. The AWS Simple Email Service is used to send a link with the token to verify the users email address. The API is deployed in the us-west-1 region.
 
 ### Base URL
 https://mul2xiuj3i.execute-api.us-east-1.amazonaws.com/production
